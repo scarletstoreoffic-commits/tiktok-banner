@@ -3,49 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TikTok Mod Banner</title>
+    <title>TikTokmods</title>
     <style>
-        body {
+        html, body {
             margin: 0;
+            padding: 0;
+            background: #111;
+        }
+
+        body {
             min-height: 100vh;
             display: flex;
             justify-content: center;
             align-items: center;
-            background: #111;
         }
 
         .banner {
             position: relative;
-            max-width: 100%;
+            width: min(100%, 1536px);
         }
 
         .banner img {
             display: block;
-            max-width: 100%;
+            width: 100%;
             height: auto;
         }
 
-        .update-button {
+        /* Telegram button on the image */
+        .telegram-link {
             position: absolute;
-            left: 6%;
-            right: 6%;
-            bottom: 6%;
-            height: 11%;
-            border-radius: 999px;
+            left: 51%;
+            right: 5%;
+            bottom: 5.5%;
+            height: 15%;
+            border-radius: 30px;
             text-decoration: none;
-            color: transparent;
-            font-size: 0;
         }
     </style>
 </head>
 <body>
     <div class="banner">
-        <img src="img/banner.png" alt="TikTok Mod Banner">
-        <a class="update-button"
-           href="https://t.me/adrmodtt"
-           target="_blank"
-           rel="noopener noreferrer"
-           aria-label="Обновить сейчас"></a>
+        <img src="img/banner.png" alt="TikTokmods">
+
+        <a
+            class="telegram-link"
+            href="https://t.me/adrmodtt"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Telegram">
+        </a>
     </div>
 </body>
 </html>

@@ -29,29 +29,45 @@
             height: auto;
         }
 
-        /* Telegram button on the image */
-        .telegram-link {
+        .button {
             position: absolute;
-            left: 51%;
-            right: 5%;
             bottom: 5.5%;
             height: 15%;
             border-radius: 30px;
-            text-decoration: none;
+            cursor: pointer;
+        }
+
+        /* Левая кнопка «Закрыть» */
+        .close-button {
+            left: 5%;
+            width: 44%;
+        }
+
+        /* Правая кнопка Telegram */
+        .telegram-button {
+            right: 5%;
+            width: 44%;
         }
     </style>
 </head>
 <body>
-    <div class="banner">
+    <div class="banner" id="banner">
         <img src="img/banner.png" alt="TikTokmods">
 
         <a
-            class="telegram-link"
+            class="button telegram-button"
             href="https://t.me/adrmodtt"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Telegram">
         </a>
+
+        <button
+            class="button close-button"
+            type="button"
+            aria-label="Закрыть"
+            onclick="document.getElementById('banner').style.display='none';">
+        </button>
     </div>
 </body>
 </html>
